@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+}
+.section {
+    height:100vh;
+    width:100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.Nav {
+
+    height: 20em;
+    max-height: 20em;
+    width:8em;
+    max-width:8em;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    border-radius:  100px;
+    position: fixed;
+    top:50% ;
+    left:92%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+
+.Nav ul li {
+    list-style: none;
+    text-align: center;
+    margin: 3em;
+    padding: 10px;
+    color: white;
+}
+
+.Nav ul  {
+    padding-left:  0;
+}
+
+.spanNav {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: grey;
+    text-indent: -9999px;
+}
+
+.spanNav2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: grey;
+    text-indent: -9999px;
+
+}
+
+#Intro {
+    background-image: url('https://static.pexels.com/photos/176851/pexels-photo-176851.jpeg');
+    background-size: cover;
+    text-align: center;
+
+}
+
+#IntroText {
+    position: absolute;
+    top:35%;
+    left:28%;
+    color:white;
+}
+
+#IntroText h1{
+    color: white;
+    font-size: 8em;
+}
+
+#IntroLogo{
+    position: absolute;
+    top:70%;
+    left:45%;
+}
+
+#downArrow {
+    height:3em;
+    position: absolute;
+    top:80%;
+    left:48%;
+    display: none;
+}
+
+#downArrow:hover {
+    height:3.1em;
+    position: absolute;
+    top:80%;
+    left:48%;
+}
+
+#education {
+    background-image: url("https://static.pexels.com/photos/85251/pencils-85251.jpeg");
+    background-size: cover;
+}
+
+#background {
+    color:white;
+}
+
+#backgroundProfileImage {
+    height:100vh;
+}
+
+#backgroundProfileImage img {
+    height:30em;
+    width: 30em;
+    border-radius: 100%;
+    position: absolute;
+    top:20%;
+    left:24%;
+}
+
+#background p, h4{
+    color:white;
+    font-size: 1.5em;
+    line-height: 200%;
+}
+
+#backgroundText {
+
+    margin-top:15em;
+}
+
+
+
+
+/* Styles for the entire LavaLamp menu */

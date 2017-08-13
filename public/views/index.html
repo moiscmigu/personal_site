@@ -3,8 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title>Moises Miguel | Developer</title>
+        <link rel="shortcut icon" href="image/MMLOGO.ico" type="image/x-icon">
+
+        <!-- STYLES -->
+        <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+
+
+        <script src="scripts/client.js" charset="utf-8"></script>
+
+
     </head>
-    <body>
+    <body class='container-fluid'>
+
+        <div class="Nav">
+            <ul>
+               <li class='spanNav'><div onmousedown="autoScrollTo('Intro');">Intro</div></li>
+               <li class='spanNav'><div onmousedown="autoScrollTo('background');" >Background</div></li>
+               <li class='spanNav'><div onmousedown="autoScrollTo('education');" >education</div></li>
+           </ul>
+        </div>
+
+
+
+
+        <div class="section" id='Intro' >
+            <div id="IntroText">
+                <h1>Moises Miguel</h1>
+                <h2>Software Developer</h2>
+            </div>
+            <img src="image/mmwhite.png" alt="" id='IntroLogo' >
+            <img src="image/arrow.png" alt="" id='downArrow' onmousedown="autoScrollTo('background');">
+        </div>
+
+        <div class="section" id='background' style='background-color:black' >
+            <div class="row">
+                <div class="col-md-6" id='backgroundProfileImage'>
+                    <img src="image/moi.jpg" alt="">
+                </div>
+                <div class="col-md-6" id='backgroundText'>
+                    <h1>Hi, I'm Moises.</h1>
+                    <h4><strong>I am a pasionate Back-End Software Developer.<br>  With a strong foucus in writing clean organized Code.</strong></h4>
+                    <p>I have dedicated my education to learning the basics of software development. Now, three years later I have a strong grasp in the object-oriented programming language JavaScript. I have enjoyed challenging myself to learn different types of frameworks and and working with API’s. I consider myself to be a Full-Stack Developer in MEAN Stack (Mongo Express, Angular and Node.js.). The best part about developing for me is the fact that I can use technology to help people live a better life. I helped create a Content Managing System for Gusu2Cure.
+That project really opened my eyes to what the power of technology can do.
+</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="section" id='education'  style='color:white'>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src='image/book.png' alt="">
+                </div>
+                <div class="col-md-6">
+                    <h1>Education</h1>
+                </div>
+            </div>
+
+        </div>
+
 
     </body>
 </html>
