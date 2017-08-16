@@ -6,7 +6,19 @@ body {
     width:100vw;
     margin: 0;
     padding: 0;
+
+
 }
+
+.sectionThird {
+    height:25vh;
+    width:100vw;
+    background-color: rgb(14, 205, 239);
+    text-align: center;
+}
+
+
+
 
 .Nav {
 
@@ -97,14 +109,9 @@ body {
     left:48%;
 }
 
-#education {
-    background-image: url("https://static.pexels.com/photos/85251/pencils-85251.jpeg");
-    background-size: cover;
-}
 
-#background {
-    color:white;
-}
+
+
 
 #backgroundProfileImage {
     height:100vh;
@@ -126,9 +133,103 @@ body {
 }
 
 #backgroundText {
-
-    margin-top:15em;
+    margin-top:10em;
 }
+
+#skills {
+    /*background-image: url("https://ak5.picdn.net/shutterstock/videos/20133778/thumb/1.jpg");*/
+    background-size: cover;
+    color: black;
+
+
+}
+
+#experiance {
+    color:white;
+    text-align: center;
+}
+
+.educationHeader h1, img{
+    display: inline-block;
+}
+
+
+.techPic {
+    border: 1px solid white;
+    display: inline-block;
+    padding:0.5em;
+    border-radius: 1em;
+    margin: 1em;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
+
+}
+.techPic h4 {
+    color: white;
+
+
+}
+.tools ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: 5em;;
+    color:white;
+
+}
+
+.tools li {
+    margin: 0.5em;
+    font-size: 1.7em;
+}
+
+#ul {
+    margin:0;
+    float:right;
+}
+
+
+
+.tools img {
+    margin-right:0.6em;
+}
+
+
+#contact {
+    color: white;
+    text-align: center;
+    background-image: url("https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg");
+    background-size: cover;
+
+}
+
+#contactEmail {
+    width:70%;
+    margin:auto;
+    margin-top: 10%;
+}
+
+#contactEmail input, textarea {
+    background-color: rgba(0, 0, 0, 0.0);
+    border:5px solid grey;
+    border-radius: 20em;
+}
+
+#contactEmail input {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 2em;
+    height:4em;
+}
+
+#contactEmail textarea {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 5em;
+}
+
+#contactEmail button {
+
+}
+
 
 
 

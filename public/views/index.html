@@ -13,19 +13,22 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
+        <script src="vendor/angular.min.js" charset="utf-8"></script>
+        <script src="scripts/contact.js" charset="utf-8"></script>
 
 
         <script src="scripts/client.js" charset="utf-8"></script>
 
 
     </head>
-    <body class='container-fluid'>
+    <body class='container-fluid' ng-app='myApp' ng-controller='mainController as mc'>
 
         <div class="Nav">
             <ul>
                <li class='spanNav'><div onmousedown="autoScrollTo('Intro');">Intro</div></li>
                <li class='spanNav'><div onmousedown="autoScrollTo('background');" >Background</div></li>
-               <li class='spanNav'><div onmousedown="autoScrollTo('education');" >education</div></li>
+               <li class='spanNav'><div onmousedown="autoScrollTo('skills');" >Skills</div></li>
+               <li class='spanNav'><div onmousedown="autoScrollTo('experiance');" >Expericance</div></li>
            </ul>
         </div>
 
@@ -59,16 +62,118 @@ That project really opened my eyes to what the power of technology can do.
 
         </div>
 
-        <div class="section" id='education'  style='color:white'>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src='image/book.png' alt="">
-                </div>
-                <div class="col-md-6">
-                    <h1>Education</h1>
+        <div class="section" id='skills' >
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class='educationHeader' style="margin-top:30%; color:white">
+                            <h1>KNOWLEDGE</h1>
+                            <img src="image/settings.png" alt="">
+                            <div id='educationTech' >
+                                <div class="techPic">
+                                    <h4>Angular</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>jQuery</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>Node.js</h4>
+                                </div>
+                                <br>
+                                <div class="techPic">
+                                    <h4>JavaScript</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>HTML5/CSS3</h4>
+                                </div>
+                                <br>
+                                <div class="techPic">
+                                    <h4>jQuery</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>MongoDB</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>Express</h4>
+                                </div>
+                                <br>
+                                <div class="techPic">
+                                    <h4>MySQL</h4>
+                                </div>
+                                <div class="techPic">
+                                    <h4>Photoshop</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class='educationHeader' style='text-align:center; margin-top:30%;'>
+                            <h1 style='color:white;'>TOOLS</h1>
+                            <img src="image/data.png" alt="">
+                        </div>
+                        <div class="tools">
+                            <ul>
+                                <li><span><img src="image/success.png" alt=""></span>Grunt</li>
+                                <li><span><img src="image/success.png" alt="">Postico</li>
+                                <li><span><img src="image/success.png" alt="">Google DevTools</li>
+                                <li><span><img src="image/success.png" alt="">Terminal</li>
+                                <li><span><img src="image/success.png" alt="">Github</li>
+                                <li><span><img src="image/success.png" alt="">Atom</li>
+
+                            </ul>
+                            <div id="ul">
+
+
+                            <ul>
+                                <li><span><img src="image/success.png" alt="">NPM</li>
+                                <li><span><img src="image/success.png" alt="">NodeMailer</li>
+                                <li><span><img src="image/success.png" alt="">Twilio</li>
+                                <li><span><img src="image/success.png" alt="">APIs</li>
+                                <li><span><img src="image/success.png" alt="">socket.io</li>
+                                <li><span><img src="image/success.png" alt="">FileShare</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+        </div>
+
+        <div class="section" id='experiance'>
+            <div class="container">
+                <div class='row'>
+                    <div class="col-md-4">
+                        <img src="image/garageShare.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/gusu.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sectionThird">
+            <h1>View Resume</h1>
+        </div>
+
+        <div class="section" id='contact' style='text-align:center' >
+
+            <h1>Contact Me</h1>
+
+            <div id='contactEmail'style='text-align:center' >
+                <input type="email" name="" value="" ng-model='mc.email' placeholder="Email" style='float:left; width:40%; text-align:center; '>
+                <input type="text" name="" value="" ng-model='mc.name' placeholder="Full Name" style='float:right; width:40%; text-align:center;'><br><br>
+                <input type="text" name="" value="" ng-model='mc.subject' placeholder="Subject" style='display:block; width:100%; text-align:center; margin-top:4em;'>
+                <textarea name="name" rows="8" cols="80" ng-model='mc.message' placeholder="Write a message..." ></textarea><br><br>
+                <button type="button" name="button" ng-click='mc.sendEmail()'>Send</button>
+
+            </div>
         </div>
 
 
