@@ -6,7 +6,7 @@ let express = require('express'),
     bodyParser = require('body-parser'),
     path = require('path'),
     app = express(),
-    port = process.env.PORT || 3000
+    port = process.env.PORT || 4000,
     nodemailer = require('nodemailer'),
     twilio= require('twilio'),
     client = new twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
@@ -17,7 +17,7 @@ let express = require('express'),
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-app.listen(4000, function() {
+app.listen(port, function() {
     console.log('Server up on port:', port);
 });//end of port listen
 
@@ -41,16 +41,16 @@ let transporter = nodemailer.createTransport({
 app.post('/', (req, res) => {
     let mailer = req.body;
 
-    client.messages.create({
-        to:'9522209630',
-        from:'7633249718',
-        body:mailer.message + " ---->" + mailer.email
-    }, function(err, data) {
-        if (err) {
-            console.log('err', err);
-            console.log('data', data);
-        }
-    });//en d of sendMessage
+    // client.messages.create({
+    //     to:'9522209630',
+    //     from:'7633249718',
+    //     body:mailer.message + " ---->" + mailer.email
+    // }, function(err, data) {
+    //     if (err) {
+    //         console.log('err', err);
+    //         console.log('data', data);
+    //     }
+    // });//en d of sendMessage
 
     console.log('post url hit', req.body);
 

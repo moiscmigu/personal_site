@@ -6,8 +6,9 @@ body {
     width:100vw;
     margin: 0;
     padding: 0;
-
-
+    display: block;
+    border: 1px solid white;
+    overflow: scroll;
 }
 
 .sectionThird {
@@ -15,6 +16,7 @@ body {
     width:100vw;
     background-color: rgb(14, 205, 239);
     text-align: center;
+    padding-top: 4em;;;
 }
 
 
@@ -233,5 +235,31 @@ body {
 
 
 
+#experiance {
+    /*text-align: center;*/
+}
 
-/* Styles for the entire LavaLamp menu */
+#project img {
+    height: 20em;
+    margin-top: 7em;
+}
+
+#project p {
+    font-size: 1.2em;
+}
+#project ul {
+    list-style:none;
+
+}
+
+#icon li{
+    display: inline-block;
+}
+
+.resume {
+    font-size: 5em;
+}
+
+.resume a{
+    text-decoration: none;
+}

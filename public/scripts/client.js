@@ -1,6 +1,20 @@
+
 $(onReady);
 
 function onReady() {
+
+        $(".nameIntro").textillate({
+            in:{effect:'rollIn'}
+        });
+
+
+        $('.nav').click(function() {
+            console.log('clicked');
+            $(this).localScroll();
+        });
+
+
+
     $(".spanNav").mouseenter(function() {
         console.log('hello');
         $(this).toggleClass("spanNav");
@@ -13,6 +27,7 @@ function onReady() {
 
     $("#IntroLogo").mouseenter(function() {
         console.log('clicked');
+
         $(this).fadeOut('slow');
         $("#downArrow").fadeIn('slow');
     });
@@ -22,6 +37,24 @@ function onReady() {
         $(this).fadeOut('slow');
         $(this).fadeIn('slow');
     });
+
+
+
+    // $("#project").mouseenter(function() {
+    //     console.log(this.id);
+    //     this.id = 'project_2';
+    //     this.children[0].children[0].className = 'pTageClass_2';
+    //
+    // });
+    //
+    // $("#project").mouseleave(function() {
+    //     console.log(this.id);
+    //     this.id = 'project';
+    //     this.children[0].children[0].className = 'pTageClass';
+    //
+    // });
+
+
 
 }
 
